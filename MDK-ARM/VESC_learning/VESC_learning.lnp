@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"vesc_learning\startup_stm32f405xx.o"
+"vesc_learning\main.o"
+"vesc_learning\gpio.o"
+"vesc_learning\can.o"
+"vesc_learning\stm32f4xx_it.o"
+"vesc_learning\stm32f4xx_hal_msp.o"
+"vesc_learning\stm32f4xx_hal_can.o"
+"vesc_learning\stm32f4xx_hal_rcc.o"
+"vesc_learning\stm32f4xx_hal_rcc_ex.o"
+"vesc_learning\stm32f4xx_hal_flash.o"
+"vesc_learning\stm32f4xx_hal_flash_ex.o"
+"vesc_learning\stm32f4xx_hal_flash_ramfunc.o"
+"vesc_learning\stm32f4xx_hal_gpio.o"
+"vesc_learning\stm32f4xx_hal_dma_ex.o"
+"vesc_learning\stm32f4xx_hal_dma.o"
+"vesc_learning\stm32f4xx_hal_pwr.o"
+"vesc_learning\stm32f4xx_hal_pwr_ex.o"
+"vesc_learning\stm32f4xx_hal_cortex.o"
+"vesc_learning\stm32f4xx_hal.o"
+"vesc_learning\stm32f4xx_hal_exti.o"
+"vesc_learning\stm32f4xx_hal_tim.o"
+"vesc_learning\stm32f4xx_hal_tim_ex.o"
+"vesc_learning\system_stm32f4xx.o"
+--strict --scatter "VESC_learning\VESC_learning.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "VESC_learning.map" -o VESC_learning\VESC_learning.axf
